@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Unit Convertor</title>
+       <style>
+        .div1{
+
+            color:darkolivegreen;
+             padding:20px;
+             margin:20px;
+             border:10px;
+
+        }
+
+        .b1{
+
+           color:darkolivegreen;
+           padding: 10px;
+           margin: 5px;
+           text-align: center;
+           font-size: medium;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .b1:hover{
+            background-color:dimgray;
+            color:white;
+        }
+        #heading{
+            color:darkolivegreen;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #input{
+         padding:20px;
+         color: darkolivegreen;
+         border-radius: 6px;
+        }
+        #reset{
+            padding:10px;
+            margin:5px;
+            color:darkolivegreen;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        #reset:hover{
+            background-color: dimgray;
+            color:white;
+        }
+       </style>
+    </head>
+    <body>
+        <h1 align="center" id="heading" >Units Convertor</h1>
+        <hr>
+        <div class="div1" align="center" >
+<input type="text" id="input" autofocus ><br><br>
+
+<button class="b1" onclick="celToFah()" >Celcius to Fahrenheit</button>
+<button class="b1" onclick="fahToCel()" >Fahrenheit to Celcius</button><br>
+<button class="b1" onclick="feetToMeters()">Feet to Meters</button>
+<button class="b1" onclick="metersToFeet()">Meters to Feet</button><br>
+<button class="b1" onclick="inchesToCm()">Inches to Centimeter</button>
+<button class="b1" onclick="cmToInches()">Centimeter to Inches</button><br>
+<button class="b1" onclick="poundsToKg()">Pounds to Kilogram</button>
+<button class="b1" onclick="kgToPounds()">Kilogram to Pounds</button><br>
+<p>The converted value is:</p>
+<p id="output"></p>
+<button id="reset" onclick="clearer()" value="Clear">Clear</button>
+
+<script src="scripts.js"></script>
+</div>
+    </body>
+</html>
